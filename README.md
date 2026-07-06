@@ -1,29 +1,22 @@
-1. Implemented VMware Backup Solution Using Azure Backup
+Dear HR Team and Manager,
 
-Short Summary:
+I hope you are doing well.
 
-* Designed and implemented a centralized VMware backup solution using Azure Backup and Recovery Services Vault.
-* Eliminated dependency on manual VM snapshots for recovery activities.
-* Successfully onboarded 196 VMware VMs with automated daily backups and 14-day retention.
-* Delivered a secure, scalable, and cost-effective alternative to external backup solutions.
+I would like to inform you that I am currently recovering from my recent pyeloplasty surgery. Unfortunately, my recovery has been slower than expected due to a post-operative wound infection. I am under regular medical supervision and receiving ongoing wound care and dressing. The wound is still healing and has intermittent discharge, along with episodes of fever caused by the infection.
 
-Problem:
+Additionally, I currently have a Double J (DJ) stent in place, which is scheduled to be removed in approximately 2–3 weeks. Following the stent removal, my doctor has advised that I will require some additional recovery time before I can safely resume regular travel and commuting.
 
-The VMware environment did not have a dedicated backup solution in place. Prior to any major activity, teams relied on manual VM snapshots as a recovery mechanism, creating operational overhead, recovery limitations, and increased risk in the event of VM failures or data corruption.
+As per my doctor’s recommendation, I have been advised to avoid unnecessary travel, especially during the rainy season, and to keep the surgical area clean and dry to minimize the risk of further infection and support proper healing.
 
-Action:
+Since I am medically fit to perform my desk-based responsibilities, I kindly request your approval to work from home until my treating doctor declares me fit to resume office travel. 
+This arrangement will allow me to continue contributing effectively while ensuring a safe and smooth recovery.
 
-* Evaluated available backup options and proposed Azure Backup as the strategic solution.
-* Designed and implemented the backup architecture using Azure Recovery Services Vault.
-* Onboarded 196 VMware VMs as part of the pilot and validation phase.
-* Configured automated daily backups with a 14-day retention policy.
-* Performed successful recovery testing to validate backup integrity and recovery readiness.
-* Established a secure backup framework without requiring any daily manual intervention.
+I have attached my medical certificate for your reference.
 
-Result:
+I sincerely appreciate your understanding and support during this period. Please let me know if any additional medical documents or information are required.
 
-* Achieved 100% automated daily backup coverage for 196 VMware VMs.
-* Successfully demonstrated VM recovery from backup, ensuring business continuity and disaster recovery readiness.
-* Eliminated reliance on manual snapshot-based recovery processes.
-* Reduced operational risk and improved data protection capabilities.
-* Delivered a cost-optimized solution compared to external vendor-based backup offerings while keeping backup data securely protected within Azure Recovery Services Vault.
+Thank you for your consideration.
+
+Kind regards,
+
+Amit Gupta
