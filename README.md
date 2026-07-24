@@ -1,18 +1,11 @@
-Completed the Nessus credentialed access configuration for the requested VM inventory.
+Weekly Update
 
-Overall Status:
-
-* Total assets in scope: 170
-* Successfully configured: 147
-* Access Denied (Linux): 2
-* Access Denied (Windows): 4
-* Arc Machines (Not Applicable): 4
-* F5 BIG-IP APM (No Account Available): 2
-* Host Not Found: 7
-* Not Applicable: 2
-* Powered Off: 1
-* Deleted Asset: 1
-
-The shared service account has been configured on all applicable systems. Assets that could not be configured were excluded due to access restrictions, non-applicability, unavailable accounts, powered-off state, deleted assets, or host resolution issues.
-
-Kindly validate the Nessus credentialed scan results. If any issues are identified during validation, please reopen the ticket or let us know.
+* Completed Nessus credentialed access enablement across Windows and Linux environments.
+* Configured the shared service account with required administrative/sudo privileges.
+* Resolved authentication, SSH, PowerShell, VMware PowerCLI, and permission-related issues.
+* Processed 170 VMs:
+    * ✅ Successfully configured: 147
+    * ❌ Access denied / Not applicable / Host not found / No account / Powered off / Deleted: 23
+* Coordinated with Security and Infrastructure teams for validation and issue resolution.
+* Successfully completed activities under 2 RITM tickets and shared the final validation status.
+* Enabled secure credentialed vulnerability scanning, improving compliance and security readiness.
