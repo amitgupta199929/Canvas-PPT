@@ -1,24 +1,18 @@
-Status: In Progress
+Completed the Nessus credentialed access configuration for the requested VM inventory.
 
-Completed:
+Overall Status:
 
-* Created/verified the audytusrsudo account on accessible Linux VMs.
-* Configured SSH public key authentication.
-* Added the user to the sshusers group (required by AllowGroups).
-* Added the user to the wheel group for sudo access where required.
-* Verified:
-    * PubkeyAuthentication yes
-    * AuthorizedKeysFile .ssh/authorized_keys
-    * AllowGroups sshusers
-    * User/group membership using id audytusrsudo.
+* Total assets in scope: 170
+* Successfully configured: 147
+* Access Denied (Linux): 2
+* Access Denied (Windows): 4
+* Arc Machines (Not Applicable): 4
+* F5 BIG-IP APM (No Account Available): 2
+* Host Not Found: 7
+* Not Applicable: 2
+* Powered Off: 1
+* Deleted Asset: 1
 
-Pending:
+The shared service account has been configured on all applicable systems. Assets that could not be configured were excluded due to access restrictions, non-applicability, unavailable accounts, powered-off state, deleted assets, or host resolution issues.
 
-* Unable to configure the remaining VMs due to lack of server access (primarily Azure-hosted VMs).
-* Access request needs to be approved/provided before completing the configuration.
-
-Next Steps:
-
-* Obtain access to the remaining VMs.
-* Configure audytusrsudo on those servers.
-* Validate Nessus authentication and sudo access on all VMs.
+Kindly validate the Nessus credentialed scan results. If any issues are identified during validation, please reopen the ticket or let us know.
