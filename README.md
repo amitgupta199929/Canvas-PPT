@@ -1,11 +1,12 @@
-Today’s Progress Update
+Hi Marcin,
 
-* Successfully provisioned and configured the new CentOS 7 VM.
-* Configured static network settings (IP: 10.227.18.110), gateway, DNS, and domain as per the provided network details.
-* Verified network connectivity and confirmed successful SSH access through PuTTY.
-* Configured and validated required filesystem mount points (/home, /tmp, /var/log, /var/log/audit, /var/lib/docker) using LVM and updated /etc/fstab.
-* Resolved mount point issues by creating the missing directories and verified all filesystems were mounted successfully.
-* Created the required Linux user account and verified administrative (sudo) access.
-* Reset and validated the root account password.
-* Updated the system hostname to centos_mythos_01 and verified the hostname configuration.
-* Currently working on final host configuration validation (hosts file/hostname consistency) and performing final post-build verification.
+As discussed earlier, I am currently not feeling well. My surgery is still pending and was postponed last week due to an infection. I am now experiencing a high-grade fever, and the doctor has advised me to get admitted for treatment. Based on my response to the treatment and overall condition, they will decide on the surgery.
+
+Regarding the technical work, I have completed the creation of all the CentOS 7 VMs. The DevOps team has confirmed that all the servers are working as expected, and I have also successfully configured the Docker Swarm cluster on them.
+
+As the next step, we need to create 5 RHEL 9.6 VMs for testing the OS upgrade.
+
+Thank you for your understanding and support.
+
+Regards,
+Amit
