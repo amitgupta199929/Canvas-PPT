@@ -1,18 +1,1 @@
-Connect-AzAccount
-$subscription = ""
-$ResourceGroupName = "<RESOURCE_GROUP_NAME>"
-$resourceName = ""
-Get Restore Point Collections
-$sub = Select-AzSubscription -Name $subscription
-$RPCs = Get-AzResource -Name $resourceName -ResourceGroupName $ResourceGroupName -ResourceType "Microsoft.Compute/restorePointCollections"
-
-if (-not $RPCs) { Write-Host "No Restore Point Collections found." -ForegroundColor Yellow return }
-
-Write-Output "`nRestore Point Collections found:" -ForegroundColor Cyan Write-Output "-----------------------------------"
-
-Print RPC details
-$RPCs | Select-Object Name, ResourceGroupName, Location, ResourceId | Format-Table -AutoSize
-
-Remove-AzResource -ResourceId $RPC.ResourceId -Force -ErrorAction Continue
-
-Write-Output "Successfully deleted: $($RPC.Name)" -ForegroundColor Green
+Hi Team, the RHEL 9.6 → 9.8 upgrade is failing due to insufficient /boot space. /dev/sdc2 is only 500 MB and currently 99% utilized (~8 MB free), causing the initramfs/dracut creation to fail. The VM is already running the 9.8 kernel. Since /boot is a separate partition and sdc3 follows it, extending /boot is not straightforward. We should first safely remove unused kernel/rescue artifacts and free sufficient space, then retry the upgrade.
