@@ -1,1 +1,1 @@
-Hi Team, the RHEL 9.6 → 9.8 upgrade is failing due to insufficient /boot space. /dev/sdc2 is only 500 MB and currently 99% utilized (~8 MB free), causing the initramfs/dracut creation to fail. The VM is already running the 9.8 kernel. Since /boot is a separate partition and sdc3 follows it, extending /boot is not straightforward. We should first safely remove unused kernel/rescue artifacts and free sufficient space, then retry the upgrade.
+sudo dnf remove --assumeno kernel-5.14.0-570.12.1.el9_6.x86_64
