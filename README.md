@@ -1,5 +1,8 @@
-New-Item -ItemType Directory -Path C:\Temp\AzureCert -Force
+Get-ChildItem Cert:\LocalMachine\CA |
+Where-Object {
+    $_.Subject -match "Microsoft TLS"
+} |
+Format-Table Subject, Issuer, NotAfter -AutoSize
 
-$url = "https://www.microsoft.com/pkiops/certs/Microsoft%20TLS%20G2%20RSA%20CA%20OCSP%2004.crt"
 
-Invoke-WebRequest -Uri $url -OutFile "C:\Temp\AzureCert\OCSP04.crt"
+certutil -addstore CA C:\Temp\AzureCert\OCSP04.crt
