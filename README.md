@@ -21,3 +21,9 @@ certutil -addstore CA "$env:TEMP\TLSRootG2-xsign.crt"
 Get-ChildItem Cert:\LocalMachine\CA |
 Where-Object {$_.Subject -match "Microsoft TLS"} |
 Format-Table Subject,Issuer,Thumbprint,NotAfter -AutoSize
+
+
+
+Get-ChildItem Cert:\LocalMachine\Root |
+Where-Object {$_.Subject -like "*DigiCert Global Root G2*"} |
+Format-List Subject,Thumbprint,NotAfter
