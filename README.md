@@ -1,4 +1,7 @@
-$inputdata= Import-CSV -Path "C:\Users\amgupta_2ND\Desktop\New Text Document.csv"
+https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/windows/activation-watermark-appears
+
+
+C:\Users\amgupta_2ND\Desktop\New Text Document.csv"
 $count = 0
 foreach($rec in $inputdata){
 $subscriptionId=$rec.subscriptionId
